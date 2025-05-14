@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanishka Sarangdhar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      min-height: 100%;
+      scroll-behavior: smooth;
+      color: white;
+      background-color: #0a0a0a;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    .box, .project, .edu, .cert, .skill, .intern {
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid gold;
+      border-radius: 10px;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    .social-links a {
+      margin-right: 1rem;
+      color: gold;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: white;
+    }
+
+    a.button {
+      background-color: gold;
+      color: black;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #007bff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    #home h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    #home p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .skills-box {
+      flex: 1;
+      min-width: 320px;
+      padding: 1.5rem;
+      background: #111;
+      border-radius: 12px;
+      border: 1px solid gold;
+    }
+
+    .skill-bar {
+      margin-bottom: 1.2rem;
+    }
+
+    .skill-bar .label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ccc;
+      margin-bottom: 0.2rem;
+    }
+
+    .skill-bar .label img {
+      margin-right: 8px;
+    }
+
+    .skill-bar .bar {
+      background: #333;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .skill-bar .fill {
+      height: 100%;
+      background: #007bff;
+      border-radius: 4px;
+    }
+
+    .tags span {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      background-color: #222;
+      color: #00f7ff;
+      font-size: 0.85rem;
+      border: 1px solid #333;
+    }
+
+    .soft-skills {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: start;
+    }
+
+    .soft-skills li {
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Portfolio</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="profile-container">
+    <img src="C:\Users\ASUS\new kanu\1746046443024.jpeg" alt="Kanishka Sarangdhar" class="profile-img">
+    <h1>Kanishka Abhay Sarangdhar</h1>
+    <p>Aspiring Machine Learning Engineer | B.Tech CSE @ Lovely Professional University</p>
+  </div>
+</section>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="box">
+    <p>I am currently pursuing B.Tech in Computer Science & Engineering (2022–2026) from Lovely Professional University. I have a strong interest in Data Visualization, UX/UI Design, and Problem Solving with skills in Python, Java, and version control tools like GitHub.</p>
+  </div>
+</section>
+
+<section id="internship">
+  <h2>Internship</h2>
+  <div class="intern">
+    <h3>Data Visualization Intern @ TCS</h3>
+    <p><strong>November 2024</strong></p>
+    <p>Created interactive dashboards using Power BI/Tableau to transform complex datasets into insights.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <img src="C:\Users\ASUS\new kanu\credit.jpeg" alt="Credit Card Fraud Detection">
+    <h3>Unsupervised Learning for Credit Card Fraud</h3>
+    <p>Built an e-commerce platform using MERN stack and applied fraud detection models using real-time data.</p>
+  </div>
+
+  <div class="project">
+    <img src="C:\Users\ASUS\new kanu\search.jpeg" alt="SearchEverywhere Tool">
+    <h3>Project SearchEverywhere</h3>
+    <p>Linux tool that searches content across PDFs, Word docs, and spreadsheets. Enhanced the grep command.</p>
+    <a href="https://github.com/suraj-singh12/Project-SearchEverywhere" class="button" target="_blank">GitHub</a>
+  </div>
+</section>
+
+
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="edu">
+    <h3>Lovely Professional University (2022–2026)</h3>
+    <p>Computer Science and Engineering — CGPA: 6.63</p>
+  </div>
+
+  <div class="edu">
+    <h3>Sai Jr College of Science (2021–2022)</h3>
+    <p>12th (Science) — 75.60%</p>
+  </div>
+
+  <div class="edu">
+    <h3>Pravara Girls English Medium School (2019–2020)</h3>
+    <p>10th — 81.40%</p>
+  </div>
+
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+
+  <div class="cert">
+    <h4>Data Structures and Algorithms</h4>
+    <p>Issued by Geeks for Geeks — August 2024</p>
+    <a href="#" class="button">View Certificate</a>
+  </div>
+
+  <div class="cert">
+    <h4>ChatGPT Advanced Data Analysis</h4>
+    <p>Issued by Coursera</p>
+    <a href="#" class="button">View Certificate</a>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>Skills & Expertise</h2>
+  <div class="skills-container">
+
+    <div class="skills-box">
+      <h3>Technical Skills</h3>
+
+      <div class="skill-bar">
+        <div class="label"><img src="https://img.icons8.com/color/24/c-plus-plus-logo.png"/> C++ <span>90%</span></div>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="label"><img src="https://img.icons8.com/color/24/javascript.png"/> JavaScript <span>85%</span></div>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="label"><img src="https://img.icons8.com/color/24/python.png"/> Python <span>90%</span></div>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="label"><img src="https://img.icons8.com/color/24/r-project.png"/> R Programming <span>80%</span></div>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="label"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/24/external-ai-machine-learning-flatart-icons-outline-flatarticons.png"/> ML Algorithms <span>75%</span></div>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="label"><img src="https://img.icons8.com/fluency/24/docker.png"/> Docker <span>85%</span></div>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h3>Tools & Platforms</h3>
+      <div class="tags">
+        <span>MySQL</span>
+        <span>MongoDB</span>
+        <span>Tableau</span>
+        <span>Jupyter</span>
+        <span>Google Colab</span>
+      </div>
+
+      <h3 style="margin-top:2rem;">Soft Skills</h3>
+      <ul class="soft-skills">
+        <li>✔️ Problem-Solving</li>
+        <li>✔️ Project Management</li>
+        <li>✔️ Team Player</li>
+        <li>✔️ Adaptability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>You can view or download my resume below:</p>
+  <a href="https://docs.google.com/document/d/1PsSiLHuA0vZ_wCn2QDj8Rz3a2-5KKVin/edit?usp=sharing&ouid=110494773238238056204&rtpof=true&sd=true" class="button" target="_blank">View Resume</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: kanishkasarangdhar44@gmail.com</p>
+  <p>Phone: 9356977856</p>
+  <p>Location: Chhatrapati Sambhaji Nagar, Maharashtra</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/kanishka-sarangdhar" target="_blank">LinkedIn</a>
+    <a href="https://github.com/kanishka1230" target="_blank">GitHub</a>
+  </div>
+</section>
+
+
+<!-- Script for Random Background -->
+<script>
+  const backgrounds = [
+    'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
+    'https://images.unsplash.com/photo-1537432376769-00a3016f9960',
+    'https://images.unsplash.com/photo-1549921296-3a4b2787c1f1',
+    'https://images.unsplash.com/photo-1504384308090-c894fdcc538d'
+  ];
+  const selected = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  document.body.style.background = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${selected}) no-repeat center center fixed`;
+  document.body.style.backgroundSize = 'cover';
+</script>
+
+
+</body>
+</html>
